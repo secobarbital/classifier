@@ -5,7 +5,7 @@ require 'rake/rdoctask'
 require 'rake/gempackagetask'
 require 'rake/contrib/rubyforgepublisher'
 
-PKG_VERSION = "1.3.1"
+PKG_VERSION = "1.3.1.1"
 
 PKG_FILES = FileList[
     "lib/**/*", "bin/*", "test/**/*", "[A-Z]*", "Rakefile", "html/**/*"
@@ -42,7 +42,7 @@ spec = Gem::Specification.new do |s|
 
   #### Basic information.
 
-  s.name = 'classifier'
+  s.name = 'secobarbital-classifier'
   s.version = PKG_VERSION
   s.summary = <<-EOF
    A general classifier module to allow Bayesian and other types of classifications.
@@ -70,8 +70,8 @@ spec = Gem::Specification.new do |s|
   s.requirements << "A porter-stemmer module to split word stems."
 
   #### Author and project details.
-  s.author = "Lucas Carlson"
-  s.email = "lucas@rufy.com"
+  s.authors = ["Lucas Carlson", "Seggy Umboh"]
+  s.email = ["lucas@rufy.com", "seggy.umboh@gmail.com"]
   s.homepage = "http://classifier.rufy.com/"
 end
 
